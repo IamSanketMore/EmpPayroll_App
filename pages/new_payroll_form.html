@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/EmpPayRoll.css">
+    <link rel="stylesheet" href="../css/new_payroll_form.css">
     <title>Employee payroll form</title>
     <script defer src="../JS/EmpPayroll.js"></script>
 
@@ -14,7 +14,7 @@
 <body>
     <header class="header-content header">
         <div class="logo-content">
-            <img src="../Assets/images/logo.png" alt="">
+            <img src="../assets/images/logo.png" alt="">
             <div>
                 <span class="emp-text">Employee</span><br>
                 <span class="emp-text emp-payroll">Payroll</span>
@@ -24,4 +24,13 @@
     </header>
 </body>
 
+<div class="form-content">
+    <form class="form" action="#" onsubmit="save(event);return false">
+        <div class="form-head">Employee Payroll form </div>
+        <div class="row-content">
+            <label class="label text" for="name">Name</label>
+            <input class="input" type="text" id="name" name="name" placeholder="Your Name.." required>
+        </div>
+    </form>
+</div>
 </html>
