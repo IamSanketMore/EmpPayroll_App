@@ -97,12 +97,7 @@
             <input class="input" type="range" name="salary" id="salary" min="300000" max="500000" step="100" value="400000">
             <output class="salary-output text" for="salary">400000</output>
         </div>
-        
-        <div class="row-content">
-            <label class="label text" for="salary">Choose your salary:</label>
-            <input class="input" type="range" name="salary" id="salary" min="300000" max="500000" step="100" value="400000">
-            <output class="salary-output text" for="salary">400000</output>
-        </div>
+
         <div class="row-content">
             <label class="label text" for="StartDate">Start Date</label>
             <select id="day" name="day">
@@ -160,6 +155,19 @@
                 <option value="2016">2016</option>
             </select>
         </div>
+        <div class="row-content">
+            <label class="label text" for="notes">Notes:</label>
+            <textarea id="notes" class="input" name="notes" placeholder=" Write Some text Here ..." style="height:100px"></textarea>
+        </div>
+        <div class="buttonParent">
+            <a href="./new_payroll_form.html" class="resetbutton button cancelButton">Cancel</a>
+                <div class="submit-reset">
+                    <button type="submit" class="button submitButton" id="submitButton">Submit</button>
+                    <button type="reset" class="button resetButton" id="resetButton">Reset</button>
+                </div>
+
+        </div>
+    
     </form>
 </div>
 </html>
