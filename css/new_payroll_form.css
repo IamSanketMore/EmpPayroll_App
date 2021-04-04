@@ -34,15 +34,18 @@ body {
     letter-spacing: 0px;
     color: #82a70c;
     text-transform: capitalize;
+    margin-left: 20px;
 }
 
 .emp-payroll {
     color: #41515f;
+    margin-left: 20px;
 }
 
 * {
     box-sizing: border-box;
 }
+
 .form-content {
     min-height: calc(100%- 80px);
     background-color: #f7f7f7;
@@ -121,14 +124,14 @@ label {
 }
 
 select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
     resize: vertical;
     font: normal normal normal 16px Roboto;
     letter-spacing: 0px;
     color: #42515f;
     background-color: transparent;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
 }
 
 .buttonParent {
@@ -165,8 +168,7 @@ select {
     text-align: center;
 }
 
-@media only screen and(max-width:960px) 
-{
+@media only screen and (max-width: 960px){
     .cancelButton{
         margin-left: 0px;
     }
@@ -175,34 +177,45 @@ select {
         padding: 44px 20px;
     }
 }
-@media only screen and(max-width: 600px) 
-{
-    .form{
-      margin-top: 10px;
+
+@media only screen and (max-width: 600px){
+    button{
+        flex-direction: column;
     }
+}
+
+@media only screen and (max-width: 600px){
+    .form{
+        margin-top: 10px;
+    }
+    
     .row{
         flex-direction: column;
     }
-    .uploadButton{
+    .uploadButtton{
         justify-content: flex-start;
     }
     .profile-radio-content{
         flex-flow: wrap;
-    }
-    .submitButton{
-        margin: 0;
     }
     .submit-reset{
         width: 100%;
         display: flex;
         flex-grow: 1;
         flex-direction: row-reverse;
-        justify-content: space-between;
         margin-bottom: 20px;
     }
-   .buttonParent{
-       flex-direction: column-reverse;
-       align-items: flex-start;
-   }
+    .submitButton{
+        margin: 0px;
+    }
+    .buttonParent{
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
 }
 
+error-output{
+    font-size: 12px;
+    font-style: italic;
+    color: red;
+}
