@@ -53,7 +53,7 @@ const createEmployeePayroll = () => {
         throw e ;
     }
 
-    employeePayrollData.image = getSelectedValues('[name=profile]').pop();
+    employeePayrollData._image = getSelectedValues('[name=profile]').pop();
     employeePayrollData.gender = getSelectedValues('[name=gender]').pop();
     employeePayrollData.department = getSelectedValues('[name=department]');
     employeePayrollData.salary = getInputValueById('#salary');
